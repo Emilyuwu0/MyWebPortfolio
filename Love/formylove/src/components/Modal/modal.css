@@ -1,0 +1,74 @@
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 99;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Cuando el modal está abierto */
+.modal-overlay.active {
+  opacity: 1; /* Mostrar el modal */
+  pointer-events: auto; /* Permitir clics en el modal */
+}
+
+.modal-content {
+    position: absolute;
+
+
+}
+
+.parent {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+    }
+
+    .card1 {
+        top: 10%;
+        left: 10%;
+    }
+    
+    .card2 {
+        top: 20%;
+        left: 30%;
+    }
+    
+    .card3 {
+        top: 40%;
+        left: 50%;
+    }
+    
+    .card4 {
+        top: 50%;
+        left: 70%;
+    }
+    
+    .card5 {
+        top: 50%;
+        left: 10%;
+    }
+    
+    .card6 {
+        top: 70%;
+        left: 30%;
+    }
+    .card7 {
+        top: 10%;
+        left: 70%;
+    }
+    .card8 {
+        top: 10%;
+        left: 50%;
+    }
