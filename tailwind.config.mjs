@@ -1,7 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+/** /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		colors: {
+			"pink-soft-color": "#F7D0D1",
+			'beige-soft-color': "#F7D0D1",
+			'pink-light-color': " #FFF9F9",
+			'beige-light-color': "#FFF5ED",
+			"black": "#000",
+		  },
 		extend: {},
 	},
 	plugins: [],
