@@ -9,7 +9,12 @@ export default {
 			'beige-light-color': "#FFF5ED",
 			"black": "#000",
 		  },
-		extend: {},
+		extend: {
+			backgroundImage: {
+				'about-pattern': "url('/src/assets/bg_about_me.png')",
+				
+			  }
+		},
 	},
 	plugins: [],
 }

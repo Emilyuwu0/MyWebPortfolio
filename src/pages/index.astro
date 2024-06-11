@@ -2,11 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 
 import Hero from "../components/Hero/hero";
+import Aboute from "../components/About/aboute";
+import Skills from "../components/Skills/skills";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <Hero client:load />
+    <Aboute client:load/>
+    <Skills client:load/>
   </main>
 </Layout>
 

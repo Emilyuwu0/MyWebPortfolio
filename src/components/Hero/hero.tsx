@@ -28,14 +28,14 @@ export default function Hero() {
   ];
   return (
     <header className="pb-10 relative z-40 bg-white ">
-      <div className="container sm:mx-24 flex flex-col-reverse lg:flex-row items-center my-auto">
+      <div className="container sm:mx-28 2xl:mx-52  flex flex-col-reverse lg:flex-row items-center my-auto">
         <div className="lg:w-1/2 flex flex-col items-center md:items-start">
           <nav className="w-full flex justify-between items-center py-4 px-6 bg-white">
             <div className="font-semibold text-xl">Logo</div>
             {/* Desktop Menu */}
             <ul className="hidden absolute top-4 space-x-4 sm:flex font-medium z-10 mt-2 cursor-pointer text-lg text-black">
               {menuList.map((item) => (
-                <div className="flex ">
+                <div className="flex " key={item.title}>
                   {item.img && (
                     <img
                       src={item.img}
@@ -52,7 +52,11 @@ export default function Hero() {
             </ul>
             {/* Mobile Menu Button */}
 
-            <img src={Icon.src} alt="logo"     className="w-10 md:hidden text-black focus:outline-none absolute top-2 left-4 z-50" />
+            <img
+              src={Icon.src}
+              alt="logo"
+              className="w-10 md:hidden text-black focus:outline-none absolute top-2 left-4 z-50"
+            />
             <button
               onClick={toggleMenu}
               className="md:hidden text-black focus:outline-none absolute top-4 right-4 z-50"
@@ -88,7 +92,7 @@ export default function Hero() {
             </ul>
           )}
           {/* Header Content */}
-          <div className="sm:mt-40 mt-20 sm:ml-6 sm:mr-6 flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="sm:mt-40 2xl:mt-64 mt-20 sm:ml-6 sm:mr-6 flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl sm:text-6xl font-extrabold text-black">
               Emily Orduz
             </h1>
