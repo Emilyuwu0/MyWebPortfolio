@@ -1,12 +1,20 @@
 import { useState } from "react";
+import Profesional from "./profesional";
+import Tecnical from "./tecnical";
+
+import "./skills.css";
 
 export default function Skills() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    { label: "Profesional", content: "Contenido de la pestaña 1" },
-    { label: "Tecnical", content: "Contenido de la pestaña 2" },
+    {
+      label: "Profesional",
+      content: <Profesional />,
+    },
+    { label: "Tecnical", content: <Tecnical /> },
   ];
+
   return (
     <div>
       <span className="block text-3xl font-medium mb-4 text-center text-black mt-40 ">
@@ -20,7 +28,7 @@ export default function Skills() {
               className={`px-4 py-2 -mb-px border-b-2 transition-colors duration-300 ${
                 index === activeTab
                   ? "border-blue-500 text-black"
-                  : "border-transparent text-pink-soft-color hover:text-blue-500"
+                  : "border-transparent text-beige-dark hover:text-blue-500"
               }`}
               onClick={() => setActiveTab(index)}
             >
@@ -28,7 +36,7 @@ export default function Skills() {
             </button>
           ))}
         </div>
-        <div className="p-4 text-black bg-beige-light-color rounded-md mt-6">
+        <div className="pl-20 pr-20 pt-14 pb-10 text-black bg-beige-light-color rounded-md mt-6 -mx-96">
           {tabs[activeTab].content}
         </div>
       </div>

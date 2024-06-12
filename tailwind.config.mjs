@@ -7,6 +7,7 @@ export default {
 			'beige-soft-color': "#F7D0D1",
 			'pink-light-color': " #FFF9F9",
 			'beige-light-color': "#FFF5ED",
+			"beige-dark":"#edc9ac",
 			"black": "#000",
 		  },
 		extend: {
