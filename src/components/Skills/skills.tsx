@@ -36,7 +36,7 @@ export default function Skills() {
             </button>
           ))}
         </div>
-        <div className="pl-20 pr-20 pt-14 pb-10 text-black bg-beige-light-color rounded-md mt-6 -mx-96">
+        <div className="sm:pl-20 sm:pr-20 sm:pt-14 sm:pb-10 text-black bg-beige-light-color rounded-md mt-6 sm:-mx-96">
           {tabs[activeTab].content}
         </div>
       </div>

@@ -13,7 +13,7 @@ export default {
 		extend: {
 			backgroundImage: {
 				'about-pattern': "url('/src/assets/bg_about_me.png')",
-				
+				'bg-project':"url('/src/assets/bg-projects.png')"
 			  }
 		},
 	},
