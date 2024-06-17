@@ -9,6 +9,7 @@ export default {
 			'beige-light-color': "#FFF5ED",
 			"beige-dark":"#edc9ac",
 			"black": "#000",
+			"white":"#fff"
 		  },
 		extend: {
 			backgroundImage: {
