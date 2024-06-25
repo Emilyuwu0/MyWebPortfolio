@@ -16,11 +16,11 @@ export default function ProjectsCv() {
   return (
     <div>
       {" "}
-      <span className="block text-3xl font-medium mb-4 text-center text-black mt-40 ">
+      <span className="block text-3xl font-medium text-center text-black mt-40 ">
         Proyectos
       </span>
-      <div>
-        <div className="w-full max-w-md m-auto text-center">
+      <div className=" bg-[url('/src/assets/bg-projects.png')] bg-cover">
+        <div className="w-full max-w-md m-auto text-center p-6">
           <div className="flex justify-center">
             {tabs.map((tab, index) => (
               <button
@@ -36,7 +36,7 @@ export default function ProjectsCv() {
               </button>
             ))}
           </div>
-          <div className=" sm:pt-14 sm:pb-10 bg-[url('/src/assets/bg-projects.png')] text-black  rounded-md mt-6 sm:-mx-96">
+          <div className=" sm:pt-14 sm:pb-10 text-black  rounded-md mt-6 sm:-mx-96 mb-36">
             {tabs[activeTab].content}
           </div>
         </div>

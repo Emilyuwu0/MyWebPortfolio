@@ -1,0 +1,39 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .img-contact {
+        width: 6rem;
+        background: red;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .img-contact {
+        width: 1rem;
+        background: rgb(0, 255, 136);
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1499px) {
+    .img-contact {
+        width: 42rem;
+        margin-top: -1.8rem;
+        right: 3rem; 
+
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1670px) {
+    .img-contact {
+        width: 45rem;
+        margin-top: -3.5rem;
+        right: 3.8rem; 
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 2800px) {
+    .img-contact {
+        width: 47rem;
+        margin-top: -5rem;
+        right:6rem; 
+        
+    }
+}

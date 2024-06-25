@@ -6,6 +6,8 @@ import Aboute from "../components/About/aboute";
 import Skills from "../components/Skills/skills";
 import TimelineMe from "../components/Timeline/timeline";
 import ProjectsCv from "../components/Projects/projects";
+import ContactForm from "../components/Contact/contact";
+import Footer from "../components/Footer/footer"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -15,6 +17,8 @@ import ProjectsCv from "../components/Projects/projects";
     <Skills client:load />
     <TimelineMe client:load />
     <ProjectsCv client:load />
+    <ContactForm client:load/>
+    <Footer  client:load/>
   </main>
 </Layout>
 
