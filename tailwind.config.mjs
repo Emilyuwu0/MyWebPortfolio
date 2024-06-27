@@ -8,6 +8,8 @@ export default {
 			'pink-light-color': " #FFF9F9",
 			'beige-light-color': "#FFF5ED",
 			"beige-dark":"#edc9ac",
+			"beige-light":"#f7f3f0",
+			"gray-light":"#E6E6E6",
 			"black": "#000",
 			"white":"#fff"
 		  },

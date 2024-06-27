@@ -1,13 +1,18 @@
 // src/components/ContactForm.js
-import { useState } from "react";
-import Alert from "../Complementary/alerts.jsx";
+import { useState, type ChangeEvent, type FormEvent } from "react";
+
 import ContactImg from "../../assets/contact.png";
 import ContactImgMobile from "../../assets/contact-mobile.png";
 
 import emailjs from "emailjs-com";
 
-import "./contact.css"
-const ContactForm = () => {
+import "./contact.css";
+export default function ContactForms() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   const [alertMessage, setAlertMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -15,7 +20,9 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -23,7 +30,7 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const serviceID = "service_tbbkinw"; // Reemplaza con tu serviceID de EmailJS
@@ -43,18 +50,21 @@ const ContactForm = () => {
       )
       .then(
         (response) => {
-          setAlertMessage("Email sent successfully!");
+          setAlertMessage("Enviado con exito! ฅ^ >ヮ<^₎ ");
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
-          alert("Failed to send email: " + error.text);
+          alert("Envio fallido!" + error.text);
         }
       );
   };
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 ">
       <div className="bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
-        <form onSubmit={handleSubmit} className="sm:p-14 p-4">
+        <form
+          onSubmit={handleSubmit}
+          className="sm:pr-14 sm:pl-14 sm:pb-10 sm:pt-10 p-4"
+        >
           <span className="block text-3xl font-medium mb-4 text-center text-black mt-4">
             Contact
           </span>
@@ -100,16 +110,19 @@ const ContactForm = () => {
           <div>
             <button
               type="submit"
-              className="sm:mt-12 mt-6 w-full py-2 px-6 rounded-xl text-black bg-beige-light-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+              onClick={openModal}
+              className="sm:mt-12 mt-6 w-full py-2 px-6 rounded-xl text-black bg-white shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
             >
               Enviar
             </button>
-          </div>
 
-          {alertMessage && <Alert alertMessage={alertMessage} />}
+            <span className="font-semibold text-center mt-4 m-auto block size-alert">
+              {alertMessage}
+            </span>
+          </div>
         </form>
       </div>
-      <div className="bg-pink-soft-color  text-black bg-[url('/src/assets/bg-contact.png')] bg-cover rounded-br-2xl rounded-bl-2xl sm:rounded-bl-none">
+      <div className="bg-pink-soft-color bg-responsive text-black bg-[url('/src/assets/bg-contact.png')] bg-cover rounded-br-2xl rounded-bl-2xl sm:rounded-bl-none  sm:rounded-tr-2xl">
         <div className="bg-[url('/src/assets/bg-contact.png')] bg-cover">
           <img
             src={ContactImg.src}
@@ -117,14 +130,14 @@ const ContactForm = () => {
             className="img-contact  hidden sm:block sm:absolute"
           />
           <div className="h-28 sm:hidden">
-              <img  src={ContactImgMobile.src}  alt="contact"
-            className="sm:hidden mt-0   mr-auto ml-auto"/>
+            <img
+              src={ContactImgMobile.src}
+              alt="contact"
+              className="sm:hidden mt-0   mr-auto ml-auto"
+            />
           </div>
-        
         </div>
       </div>
     </div>
   );
-};
-
-export default ContactForm;
+}

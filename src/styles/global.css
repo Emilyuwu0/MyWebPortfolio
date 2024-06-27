@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-y: scroll;
+    /* Muestra la barra de desplazamiento vertical incluso si no es necesario */
+    scroll-behavior: smooth;
+    /* Transiciones suaves entre posiciones de scroll */
+}
+
+
+@font-face {
+    font-family: 'DistantGalaxy';
+    src: url('/fonts/Poppings-Medium') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(20deg, #FFF5ED 0%, #F7D0D1 87%);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}

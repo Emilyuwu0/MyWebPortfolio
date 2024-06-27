@@ -3,24 +3,28 @@ import "./timeline.css";
 export default function TimelineMe() {
   const Activity = [
     {
+      id: "1",
       img: "https://www.clker.com//cliparts/w/M/5/G/9/9/pink-circle-hi.png",
       name: "Frontend Developer",
       date: "Oct. 2022 - ene 2024",
       item: "AntPack · Jornada completa",
     },
     {
+      id: "2",
       img: "https://www.clker.com//cliparts/w/M/5/G/9/9/pink-circle-hi.png",
       name: "Desarrollador de Front-end",
       date: "Ene. 2021 - oct. 2022",
       item: "IPCOM - Jornada completa",
     },
     {
+      id: "3",
       img: "https://www.clker.com//cliparts/w/M/5/G/9/9/pink-circle-hi.png",
       name: "Desarrolladora Junior Front-end",
       date: "Mar. 2020 - sept. 2020",
       item: "Chefmenu · Jornada completa",
     },
     {
+      id: "4",
       img: "https://www.clker.com//cliparts/w/M/5/G/9/9/pink-circle-hi.png",
       name: "Desarrolladora Junior ",
       date: "Ago. 2016 - ene. 2020",
@@ -41,7 +45,7 @@ export default function TimelineMe() {
           <div className="responsive-margin  ">
             <ul role="list" className="space-y-2 ">
               {Activity.map((activityItem) => (
-                <div >
+                <div key={activityItem.id}>
                   <div className="space-y-6 border-l-2 border-dashed">
                     <div className="relative w-full">
                       <img src={activityItem.img} className="w-6 -ml-3" />

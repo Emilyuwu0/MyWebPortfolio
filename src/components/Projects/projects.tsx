@@ -20,7 +20,7 @@ export default function ProjectsCv() {
         Proyectos
       </span>
       <div className=" bg-[url('/src/assets/bg-projects.png')] bg-cover">
-        <div className="w-full max-w-md m-auto text-center p-6">
+        <div className="w-full max-w-sm m-auto text-center p-6">
           <div className="flex justify-center">
             {tabs.map((tab, index) => (
               <button

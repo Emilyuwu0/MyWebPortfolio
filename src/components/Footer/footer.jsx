@@ -2,7 +2,7 @@
 export default function Footers() {
   return (
     <>
-      <div className=" bg-beige-dark rounded-t-3xl  shadow-card">
+      <div className=" bg-beige-light rounded-t-3xl  shadow-card">
         <footer className=" rounded-lg">
           <div className="mx-auto max-w-7xl overflow-hidden px-6 py-18 sm:py-24 lg:px-8 pt-6 pb-6">
             <nav
@@ -13,7 +13,7 @@ export default function Footers() {
                 <div key={item.name} className="pb-6 text-center">
                   <a
                     href={item.href}
-                    className="text-sm leading-6 text-white hover:text-gray-900 "
+                    className="text-sm leading-6 text-black hover:text-gray-900 "
                   >
                     {item.name}
                   </a>
@@ -26,7 +26,7 @@ export default function Footers() {
                   key={item.name}
                   href={item.href}
                   target="_blank"
-                  className="text-white hover:text-gray-500"
+                  className="text-black hover:text-gray-500"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />

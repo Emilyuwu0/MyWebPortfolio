@@ -28,10 +28,10 @@ export default function Hero() {
   ];
   return (
     <header className="pb-10 relative z-40 bg-white ">
-      <div className="container sm:mx-28 2xl:mx-52  flex flex-col-reverse lg:flex-row items-center my-auto">
+      <div className=" sm:mx-28 2xl:mx-52  flex flex-col-reverse lg:flex-row items-center my-auto">
         <div className="lg:w-1/2 flex flex-col items-center md:items-start">
-          <nav className="w-full flex justify-between items-center py-4 px-6 bg-white">
-            <div className="font-semibold text-xl">Logo</div>
+          <nav >
+      
             {/* Desktop Menu */}
             <ul className="hidden absolute top-4 space-x-4 sm:flex font-medium z-10 mt-2 cursor-pointer text-lg text-black">
               {menuList.map((item) => (
@@ -93,7 +93,7 @@ export default function Hero() {
           )}
           {/* Header Content */}
           <div className="sm:mt-40 2xl:mt-64 mt-20 sm:ml-6 sm:mr-6 flex flex-col items-center md:items-start text-center md:text-left">
-            <h1 className="text-4xl sm:text-6xl font-extrabold text-black">
+            <h1 className="text-4xl sm:text-6xl mt-14 font-extrabold text-black">
               Emily Orduz
             </h1>
             <div className="sm:text-2xl text-xl mt-6">

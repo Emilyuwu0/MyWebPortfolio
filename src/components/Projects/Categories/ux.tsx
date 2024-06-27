@@ -32,7 +32,7 @@ export default function UxPj() {
         {UxUwu.map((project) => (
           <div
             key={project.name}
-            className="relative flex w-full flex-col rounded-xl bg-beige-light-color bg-clip-border text-gray-700 shadow-md"
+            className="relative flex w-full flex-col rounded-xl bg-beige-light bg-clip-border text-gray-700 shadow-md"
           >
             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-white -500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <img src={project.imgProject} alt={project.name} />
