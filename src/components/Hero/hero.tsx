@@ -1,32 +1,15 @@
 import { useState } from "react";
 import HeroImg from "../../assets/UWU.png";
 import Icon from "../../assets/gato.png";
-
+import pdf from './cv.pdf';
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const menuList = [
-    {
-      img: Icon.src,
-      title: "",
-      href: "/",
-    },
-    {
-      img: "",
-      title: "Habilidades",
-      href: "#skills",
-    },
-    {
-      img: "",
-      title: "Curriculum",
-      href: "#curriculum",
-    },
-    { img: "", title: "Proyectos", href: "#project" },
-    { img: "", title: "Experiencia", href: "#exp" },
-  ];
-  return (
+
+
+return (
     <header className="pb-10 relative z-40 bg-white ">
       <div className=" sm:mx-28 2xl:mx-52  flex flex-col-reverse lg:flex-row items-center my-auto">
         <div className="lg:w-1/2 flex flex-col items-center md:items-start">
@@ -81,7 +64,7 @@ export default function Hero() {
           </nav>
           {/* Mobile Menu */}
           {isOpen && (
-            <ul className="md:hidden absolute top-0 left-0 pt-12 w-full bg-white shadow-md text-lg text-black py-4 space-y-4 text-center bg-beige-light-color h-full z-20">
+            <ul className="md:hidden absolute top-0 left-0 pt-20 w-full shadow-md text-lg text-black py-4 space-y-4 text-center bg-beige-light-color h-[60rem] z-20">
               {menuList.map((item) => (
                 <li key={item.title}>
                   <a href={item.href} className="block hover:text-indigo-500">
@@ -107,10 +90,12 @@ export default function Hero() {
                 Sobre mí
               </a>
               <a
-                href="#curriculum"
+              href={pdf} target="_blank"
+             rel="noopener noreferrer" download="cv.pdf"
+                /* href="#curriculum" */
                 className="py-2 px-6 rounded-xl text-black bg-beige-light-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
               >
-                Curriculum
+                Curriculum 
               </a>
             </div>
           </div>
@@ -122,3 +107,22 @@ export default function Hero() {
     </header>
   );
 }
+ const menuList = [
+    {
+      img: Icon.src,
+      title: "",
+      href: "/",
+    },
+    {
+      img: "",
+      title: "Habilidades",
+      href: "#skills",
+    },
+    { img: "", title: "Experiencia", href: "#exp" },
+    { img: "", title: "Proyectos", href: "#project" },
+    {
+      img: "",
+      title: "Contacto",
+      href: "#contact",
+    },
+  ];

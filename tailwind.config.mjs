@@ -18,6 +18,9 @@ export default {
 				'about-pattern': "url('/src/assets/bg_about_me.png')",
 				'bg-project':"url('/src/assets/bg-projects.png')",
 				'bg-contact':"url('/src/assets/bg-contact.png')",
+			  },
+			  height: {
+				'160': '60rem',
 			  }
 		},
 	},

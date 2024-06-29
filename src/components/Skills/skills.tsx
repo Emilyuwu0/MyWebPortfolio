@@ -16,11 +16,11 @@ export default function Skills() {
   ];
 
   return (
-    <div>
-      <span className="block text-3xl font-medium mb-4 text-center text-black mt-40 ">
+    <div id="skills" className="bg-[url('/src/assets/bg-projects.png')] bg-cover ">
+      <span className=" block text-3xl font-medium mb-4 text-center text-black mt-40 ">
         Skills
       </span>
-      <div className="w-full max-w-md m-auto text-center">
+      <div className="w-full max-w-md m-auto text-center ">
         <div className="flex justify-center">
           {tabs.map((tab, index) => (
             <button

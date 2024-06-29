@@ -24,7 +24,7 @@ export default function Profesional() {
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 p-4 bg-gray-200">
           {/* Columna 1 */}
-          <h2 className="mb-10 text-xl text-left mt-4">
+          <h2 className="mb-10 text-xl text-left mt-4 font-semibold">
             Mis habilidades profesionales
           </h2>
           <p className="text-left">
@@ -43,7 +43,7 @@ export default function Profesional() {
               >
                 <div className="">
                   <div className="text mt-4">
-                    <p className="text-lg font-semibold mb-4">{person.name}</p>
+                    <p className="text-lg  mb-4">{person.name}</p>
                     <div className="progress">
                       <div className={` ${person.level}`}></div>
                     </div>

@@ -32,7 +32,7 @@ export default function TimelineMe() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56 2xl:mt-80">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56 2xl:mt-80" id="exp">
       <div>
         <img src={Timeline.src} />
       </div>

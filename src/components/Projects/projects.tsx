@@ -14,7 +14,7 @@ export default function ProjectsCv() {
     { label: "Ux / Ui ", content: <UxPj /> },
   ];
   return (
-    <div>
+    <div id="project">
       {" "}
       <span className="block text-3xl font-medium text-center text-black mt-40 ">
         Proyectos

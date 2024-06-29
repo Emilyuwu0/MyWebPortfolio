@@ -8,11 +8,6 @@ import emailjs from "emailjs-com";
 
 import "./contact.css";
 export default function ContactForms() {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
-
   const [alertMessage, setAlertMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -59,7 +54,7 @@ export default function ContactForms() {
       );
   };
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 ">
+    <div id="contact" className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 ">
       <div className="bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
         <form
           onSubmit={handleSubmit}
@@ -83,7 +78,7 @@ export default function ContactForms() {
               </label>
             </div>
             <div>
-              <label className="block text-sm font-medium leading-6 text-gray-900">
+              <label className="mt-2 block text-sm font-medium leading-6 text-gray-900">
                 Email:
                 <input
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -97,7 +92,7 @@ export default function ContactForms() {
           </div>
           <div>
             {" "}
-            <label className="block text-sm font-medium leading-6">
+            <label className="sm:mt-4 mt-2 block text-sm font-medium leading-6">
               Message:
               <textarea
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -110,7 +105,7 @@ export default function ContactForms() {
           <div>
             <button
               type="submit"
-              onClick={openModal}
+     
               className="sm:mt-12 mt-6 w-full py-2 px-6 rounded-xl text-black bg-white shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
             >
               Enviar

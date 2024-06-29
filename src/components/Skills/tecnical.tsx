@@ -1,34 +1,41 @@
-import Html from "../../assets/skills/html.png";
+import Html from "../../assets/skills/html.png"
+import Js from "../../assets/skills/js.png";
+import React from "../../assets/skills/react.png";
+import Vue from "../../assets/skills/vue.png";
+import Gatsby from "../../assets/skills/gatsby.png";
+import CS33 from "../../assets/skills/css.png";
+import Tailwind from "../../assets/skills/tailwind.png";
+
 export default function Tecnical() {
   const ImgSkills = [
     {
       image: Html,
     },
     {
-      image: Html,
+      image: Js,
     },
     {
       image: Html,
     },
     {
-      image: Html,
+      image: React,
     },
     {
-      image: Html,
+      image: Vue,
     },
     {
-      image: Html,
+      image: Gatsby,
     },
     {
-      image: Html,
+      image: CS33,
     },
     {
-      image: Html,
+      image: Tailwind,
     },
   ];
   return (
     <div>
-      <h2 className="mb-10 font-medium text-xl text-center mt-10">
+      <h2 className="mb-10 font-semibold text-xl text-center mt-10">
         Mis habilidades profesionales
       </h2>
       <div className="flex justify-center">
