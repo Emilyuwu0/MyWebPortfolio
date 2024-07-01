@@ -36,24 +36,24 @@ export default function TimelineMe() {
       <div>
         <img src={Timeline.src} />
       </div>
-      <div className="bg-pink-light-color p-4 text-black">
+      <div className="bg-pink-light-color p-8 text-black">
         <div>
           <span className="block text-3xl font-medium mb-4 text-center sm:text-left">
             Experiencia
           </span>
 
-          <div className="responsive-margin  ">
-            <ul role="list" className="space-y-2 ">
+          <div className="responsive-margin ">
+            <ul role="list" className="space-y-6 ">
               {Activity.map((activityItem) => (
                 <div key={activityItem.id}>
-                  <div className="space-y-6 border-l-2 border-dashed">
+                  <div className=" border-l-2 ">
                     <div className="relative w-full">
-                      <img src={activityItem.img} className="w-6 -ml-3" />
+                    
                       <div className="ml-6">
-                        <h4 className="font-bold text-blue-500">
+                        <h4 className="font-medium text-blue-500">
                           {activityItem.name}
                         </h4>
-                        <span className="mt-1 block text-sm font-semibold text-blue-500">
+                        <span className="mt-1 block text-sm italic text-blue-500">
                           {activityItem.date}
                         </span>
                         <p className="mt-2 max-w-screen-sm text-sm text-gray-500">

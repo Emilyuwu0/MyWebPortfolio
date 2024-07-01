@@ -6,6 +6,7 @@ export default {
 			"pink-soft-color": "#F7D0D1",
 			'beige-soft-color': "#F7D0D1",
 			'pink-light-color': " #FFF9F9",
+			'pink-other-light': "#FAE3E3",
 			'beige-light-color': "#FFF5ED",
 			"beige-dark":"#edc9ac",
 			"beige-light":"#f7f3f0",

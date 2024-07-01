@@ -20,7 +20,7 @@ export default function Profesional() {
     },
   ];
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-8 bg-beige-light-color  rounded-xl">
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 p-4 bg-gray-200">
           {/* Columna 1 */}
