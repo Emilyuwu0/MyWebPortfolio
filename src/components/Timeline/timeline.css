@@ -1,88 +1,69 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-.bg-timeline {
-  background-image: url("../../../assets/Bg/timeline.png");
-  background-size: cover; /* You can use other values like 'contain', 'auto', etc. */
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.design-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 0;
-}
-
-.design {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.timeline-content {
-  padding: 20px;
-  background: rgb(238, 174, 202);
-  background: #0a1320;
-  /*   -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424; */
-  border-radius: 5px;
-  color: white;
-  padding: 1.75rem;
-  transition: 0.4s ease;
-  overflow-wrap: break-word !important;
-  margin: 1rem;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.timeline-component {
-  margin: 0px 20px 20px 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .timeline {
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-  }
-  .timeline-middle {
-    position: relative;
-    background: linear-gradient(90deg, #4e59e6 0%, #693bd7 87%);
-    width: 5px;
-    height: 105%;
-    border-radius: 20px;
-  }
-  .main-middle {
-    opacity: 0;
-  }
-  .timeline-circle {
-    position: absolute;
-    top: 4rem;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, #4e59e6 0%, #693bd7 87%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+@media (min-width: 768px) and (max-width: 1020px) {
+  .timeline-img {
+      width: 6rem;
+      background: red;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .timeline-img {
+      width: 27rem;
+      margin-top: 9.5rem;
+      right: 6rem;
+  }
+
+  .size-alert {
+      height: 2.8rem;
+  }
+
+  .bg-responsive {
+      background: #fff9f9 !important;
+  }
+}
+
+@media (min-width: 1210px) and (max-width: 1290px) {
+  .timeline-img {
+      width: 35rem;
+      margin-top: 4.5rem;
+      right: 6rem;
+  }
+
+  .size-alert {
+      height: 2.8rem;
+  }
+
+  .bg-responsive {
+      background: #fff9f9 !important;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1499px) {
+  .timeline-img {
+      width: 42rem;
+      margin-top: -1.8rem;
+      right: 3rem;
+
+  }
+
+  .size-alert {
+      height: 1.2rem;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1670px) {
+  .timeline-img {
+      width: 45rem;
+      margin-top: -3.5rem;
+      right: 3.8rem;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2800px) {
+  .timeline-img {
+    width: 43.8rem;
+    right: 10rem;
+    margin-top: 0rem;
+  }
 
 
-.timeline-circle {
-  @apply animate-bounce; 
-  margin-left: -12px;
 }

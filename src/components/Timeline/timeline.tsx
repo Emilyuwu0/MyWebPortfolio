@@ -1,4 +1,4 @@
-import Timeline from "../../assets/timeline_assets.png";
+import Timeline from "../../assets/timeline.png";
 import "./timeline.css";
 export default function TimelineMe() {
   const Activity = [
@@ -32,41 +32,60 @@ export default function TimelineMe() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56 2xl:mt-80" id="exp">
-      <div>
-        <img src={Timeline.src} />
-      </div>
-      <div className="bg-pink-light-color p-8 text-black">
+    <div
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56 2xl:mt-80   rounded-xl container m-auto"
+      id="exp"
+    >
+      <div className="bg-pink-soft-color  p-8 text-black sm:rounded-l-xl ">
         <div>
-          <span className="block text-3xl font-medium mb-4 text-center sm:text-left">
+          <span className="block text-3xl font-medium mb-4 text-center sm:text-center sm:ml-20">
             Experiencia
           </span>
 
-          <div className="responsive-margin ">
-            <ul role="list" className="space-y-6 ">
-              {Activity.map((activityItem) => (
-                <div key={activityItem.id}>
-                  <div className=" border-l-2 ">
-                    <div className="relative w-full">
-                    
-                      <div className="ml-6">
-                        <h4 className="font-medium text-blue-500">
-                          {activityItem.name}
-                        </h4>
-                        <span className="mt-1 block text-sm italic text-blue-500">
+          <section className="relative flex flex-col justify-center overflow-hidden p-2  items-end ">
+            <div className="flex flex-col  ">
+              <div className="w-full max-w-3xl mx-auto">
+                {Activity.map((activityItem) => (
+                  <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                    <div className="relative">
+                      <div className="md:flex items-center md:space-x-4 mb-3">
+                        <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
+                            <svg
+                              className="fill-emerald-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                            >
+                              <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div className=" ml-12 -mt-8 sm:mt-2 mb-6 sm:mb-2">
+                          <span className=" font-medium">
+                            {activityItem.name}
+                          </span>{" "}
+                        </div>
+                      </div>
+
+                      <div className="bg-pink-light-color p-4  mb-6 rounded sm:w-96 shadow ">
+                        <span className="text-sm block">
                           {activityItem.date}
                         </span>
-                        <p className="mt-2 max-w-screen-sm text-sm text-gray-500">
-                          {activityItem.item}
-                        </p>
+                        {activityItem.item}
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </ul>
-          </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </div>
+      </div>
+      {/*  uno */}
+      <div className="bg-pink-soft-color  sm:rounded-r-xl">
+        <img src={Timeline.src} alt="timeline" className="timeline-img absolute"/>
       </div>
     </div>
   );
