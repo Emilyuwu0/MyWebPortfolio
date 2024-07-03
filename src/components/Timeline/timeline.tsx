@@ -33,7 +33,7 @@ export default function TimelineMe() {
   ];
   return (
     <div
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56 2xl:mt-80   rounded-xl container m-auto"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56  rounded-xl container m-auto"
       id="exp"
     >
       <div className="bg-pink-soft-color  p-8 text-black sm:rounded-l-xl ">

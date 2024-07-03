@@ -1,7 +1,7 @@
 import Arcadia from "../../../assets/projects/arcadia.png";
 import Port from "../../../assets/projects/port.jpg";
 import Porto from "../../../assets/projects/porto.jpg";
-import Ces from "../../../assets/projects/ces.png";
+
 export default function UxPj() {
   const UxUwu = [
     {
