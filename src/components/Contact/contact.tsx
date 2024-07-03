@@ -58,10 +58,10 @@ export default function ContactForms() {
       <div className="bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
         <form
           onSubmit={handleSubmit}
-          className="sm:pr-14 sm:pl-14 sm:pb-10 sm:pt-10 p-4"
+          className="sm:pr-14 sm:pl-14 sm:pb-10 sm:pt-10 sm:p-4 p-8"
         >
-          <span className="block text-3xl font-medium mb-4 text-center text-black mt-4">
-            Contact
+          <span className="block text-3xl font-medium mb-4 text-center text-black mt-4 sm:mt-4">
+            Contacto
           </span>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  sm:gap-10">
             <div>

@@ -39,9 +39,9 @@
 
 @media (min-width: 1300px) and (max-width: 1499px) {
     .img-contact {
-        width: 42rem;
-        margin-top: -1.8rem;
-        right: 3rem;
+        width: 44.5rem;
+        margin-top: -1.85rem;
+        right: 4rem;
 
     }
 
@@ -53,7 +53,7 @@
 @media (min-width: 1500px) and (max-width: 1670px) {
     .img-contact {
         width: 45rem;
-        margin-top: -3.5rem;
+        margin-top: -3.35rem;
         right: 3.8rem;
     }
 }

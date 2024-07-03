@@ -24,10 +24,10 @@ export default function Profesional() {
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 p-4 bg-gray-200">
           {/* Columna 1 */}
-          <h2 className="mb-10 text-xl text-left mt-4 font-semibold">
+          <h2 className="mb-10 text-xl sm:text-left text-center mt-4 font-medium">
             Mis habilidades profesionales
           </h2>
-          <p className="text-left">
+          <p className="sm:text-left text-center">
             Contando con 3 años de experiencia, destacado por mi trabajo en
             equipo, iniciativa, orientación al logro, creatividad y dedicación.{" "}
             <br /> Mi enfoque en la eficiencia y la mejora continua aporta
