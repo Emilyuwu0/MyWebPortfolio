@@ -14,10 +14,19 @@ import xD from "../../assets/skills/xd.png";
 
 import LogoFront from "../../assets/programacion.png";
 import LogoUx from "../../assets/ux.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../Util/Variants";
 
 export default function Tecnical() {
   return (
-    <div className="container mx-auto p-4 bg-pink-light-color rounded-xl ">
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
+      style={{ opacity: 0 }}
+      className="container mx-auto p-4 bg-pink-light-color rounded-xl "
+    >
       {/*  <h2 className="mb-10 text-xl text-center mt-4 font-semibold">
         Mis habilidades tecnicas 🍥
       </h2> */}
@@ -36,11 +45,15 @@ export default function Tecnical() {
           </p>
           <div className="mt-10">
             {ImgSkillsUx.map((img) => (
-              <div className="inline-block mt-8  ">
+              <motion.div
+                whileHover={{ scale: [null, 1, 1.2] }}
+                transition={{ duration: 0.3 }}
+                className="inline-block mt-8 cursor-pointer  "
+              >
                 <span className="bg-pink-soft-color rounded-3xl py-2 px-3 ml-2">
                   {img.title}
                 </span>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -54,18 +67,21 @@ export default function Tecnical() {
             proyectos reales y funcionales en el navegador.
           </p>
           <div className="mt-16">
-             {ImgSkillsFront.map((img) => (
-            <div className="inline-block mt-8  ">
-              <span className="bg-pink-soft-color rounded-3xl py-2 px-3 ml-2">
-                {img.title}
-              </span>
-            </div>
-          ))}
+            {ImgSkillsFront.map((img) => (
+              <motion.div
+                whileHover={{ scale: [null, 1, 1.2] }}
+                transition={{ duration: 0.3 }}
+                className="inline-block mt-8 cursor-pointer "
+              >
+                <span className="bg-pink-soft-color rounded-3xl py-2 px-3 ml-2">
+                  {img.title}
+                </span>
+              </motion.div>
+            ))}
           </div>
-         
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 const ImgSkillsFront = [

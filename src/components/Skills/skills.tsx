@@ -16,7 +16,11 @@ export default function Skills() {
   ];
 
   return (
-    <div id="skills" className="bg-[url('/src/assets/bg-projects.png')] bg-cover sm:mb-2 mb-16 sm:p-2 p-4">
+    <div
+      
+      id="skills"
+      className="bg-[url('/src/assets/bg-projects.png')] bg-cover sm:mb-2 mb-16 sm:p-2 p-4"
+    >
       <span className=" block text-3xl font-medium mb-4 text-center text-black mt-40 ">
         Skills
       </span>

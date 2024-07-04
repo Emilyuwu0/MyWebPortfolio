@@ -1,7 +1,7 @@
 import Arcadia from "../../../assets/projects/arcadia.png";
 import Port from "../../../assets/projects/port.jpg";
 import Porto from "../../../assets/projects/porto.jpg";
-
+import { motion } from "framer-motion";
 export default function UxPj() {
   const UxUwu = [
     {
@@ -30,6 +30,11 @@ export default function UxPj() {
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-20">
         {UxUwu.map((project) => (
+               <motion.div
+               className="box"
+               whileHover={{ scale: [null, 1.2, 1.2] }}
+               transition={{ duration: 0.3 }}
+             >
           <div
             key={project.name}
             className="relative flex w-full flex-col rounded-xl bg-beige-light bg-clip-border text-gray-700 shadow-md"
@@ -59,8 +64,8 @@ export default function UxPj() {
                 Vistazo!
               </a>
             </div>
-          </div>
-        ))}
+          </div></motion.div>
+        ))} 
       </div>
     </div>
   );

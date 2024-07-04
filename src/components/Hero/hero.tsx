@@ -1,22 +1,29 @@
 import { useState } from "react";
 import HeroImg from "../../assets/UWU.png";
 import Icon from "../../assets/gato.png";
-import pdf from './cv.pdf';import { motion } from "framer-motion";
+import pdf from "./cv.pdf";
+import { motion } from "framer-motion";
+
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const text = "Emily Orduz ".split(" ");
+  const subTitle = "Frontend Developer 💻 ".split(" ");
 
-
-return (
+  return (
     <header className="pb-10 relative z-40 bg-white ">
+        <motion.div
+       initial={{ opacity: 0 }}
+       animate={{ opacity: 1 }}
+       transition={{
+         duration: 0.6,
+       }}
+      >
       <div className=" sm:mx-28 2xl:mx-52  flex flex-col-reverse lg:flex-row items-center my-auto">
-        
         <div className="lg:w-1/2 flex flex-col items-center md:items-start">
-          <nav >
-      
+          <nav>
             {/* Desktop Menu */}
             <ul className="hidden absolute top-4 space-x-4 sm:flex font-medium z-10 mt-2 cursor-pointer text-lg text-black">
               {menuList.map((item) => (
@@ -79,24 +86,36 @@ return (
           {/* Header Content */}
           <div className="sm:mt-40 2xl:mt-64 mt-20 sm:ml-6 sm:mr-6 flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl sm:text-6xl mt-14 font-extrabold text-black">
-
-            {text.map((el, i) => (
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 0.60,
-            delay: i / 20,
-          }}
-          key={i}
-        >
-          {el}{" "}
-        </motion.span>
-      ))}
-      
+              {text.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: i / 20,
+                  }}
+                  key={i}
+                >
+                  {el}{" "}
+                </motion.span>
+              ))}
             </h1>
             <div className="sm:text-2xl text-xl mt-6">
-              <h4 className="text-black font-medium">Frontend Developer</h4>
+              <h4 className="text-black font-medium">
+                {subTitle.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: i / 20,
+                    }}
+                    key={i}
+                  >
+                    {el}{" "}
+                  </motion.span>
+                ))}
+              </h4>
             </div>
             <div className="flex space-x-4 mt-10">
               <a
@@ -106,39 +125,42 @@ return (
                 Sobre mí
               </a>
               <a
-              href={pdf} target="_blank"
-             rel="noopener noreferrer" download="cv.pdf"
+                href={pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="cv.pdf"
                 /* href="#curriculum" */
                 className="py-2 px-6 rounded-xl text-black bg-beige-light-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
               >
-                Curriculum 
+                Curriculum
               </a>
             </div>
           </div>
         </div>
         <div className="lg:w-1/2 lg:mt-0 flex justify-center lg:justify-end sm:absolute right-0 top-0 -mb-32 ">
-          <img src={HeroImg.src} className="max-w-full" alt="Header"/>
+          <img src={HeroImg.src} className="max-w-full" alt="Header" />
         </div>
       </div>
+        </motion.div>
     </header>
   );
 }
- const menuList = [
-    {
-      img: Icon.src,
-      title: "",
-      href: "/",
-    },
-    {
-      img: "",
-      title: "Habilidades",
-      href: "#skills",
-    },
-    { img: "", title: "Experiencia", href: "#exp" },
-    { img: "", title: "Proyectos", href: "#project" },
-    {
-      img: "",
-      title: "Contacto",
-      href: "#contact",
-    },
-  ];
+const menuList = [
+  {
+    img: Icon.src,
+    title: "",
+    href: "/",
+  },
+  {
+    img: "",
+    title: "Habilidades",
+    href: "#skills",
+  },
+  { img: "", title: "Experiencia", href: "#exp" },
+  { img: "", title: "Proyectos", href: "#project" },
+  {
+    img: "",
+    title: "Contacto",
+    href: "#contact",
+  },
+];

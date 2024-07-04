@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import "./skills.css";
+import { fadeIn } from "../Util/Variants";
 export default function Profesional() {
   const Skill = [
     {
@@ -20,7 +22,14 @@ export default function Profesional() {
     },
   ];
   return (
-    <div className="container mx-auto p-8 bg-beige-light-color  rounded-xl">
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
+      style={{ opacity: 0 }}
+      className="container mx-auto p-8 bg-beige-light-color  rounded-xl"
+    >
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 p-4 bg-gray-200">
           {/* Columna 1 */}
@@ -54,6 +63,6 @@ export default function Profesional() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -4,6 +4,8 @@ import Lil from "../../../assets/projects/lilIn.jpg";
 import Shipyard from "../../../assets/projects/ship.jpg";
 import Ces from "../../../assets/projects/ces.png";
 import GWS from "../../../assets/projects/gws.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Util/Variants";
 export default function FrontendPj() {
   const ProjectsUwu = [
     {
@@ -50,15 +52,26 @@ export default function FrontendPj() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-10 gap-12  2xl:gap-20">
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
+      style={{ opacity: 0 }}
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-10 gap-12  2xl:gap-20"
+    >
       {ProjectsUwu.map((project) => (
         <div
           key={project.name}
           className="relative flex w-full flex-col rounded-xl bg-beige-light-color bg-clip-border text-gray-700 shadow-md"
         >
-          <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-white -500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+          <motion.div
+            whileHover={{ scale: [null, 1.2, 1.2] }}
+            transition={{ duration: 0.3 }}
+            className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-white -500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600"
+          >
             <img src={project.imgProject} alt={project.name} />
-          </div>
+          </motion.div>
           <div className="p-6">
             <h5 className="mb-2 block   font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               {project.name}
@@ -83,6 +96,6 @@ export default function FrontendPj() {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }

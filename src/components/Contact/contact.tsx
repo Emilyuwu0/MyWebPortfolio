@@ -3,10 +3,12 @@ import { useState, type ChangeEvent, type FormEvent } from "react";
 
 import ContactImg from "../../assets/contact.png";
 import ContactImgMobile from "../../assets/contact-mobile.png";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../Util/Variants";
 import emailjs from "emailjs-com";
 
 import "./contact.css";
+
 export default function ContactForms() {
   const [alertMessage, setAlertMessage] = useState("");
   const [formData, setFormData] = useState({
@@ -54,7 +56,15 @@ export default function ContactForms() {
       );
   };
   return (
-    <div id="contact" className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 ">
+    <motion.div
+      variants={fadeIn("down", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
+      style={{ opacity: 0 }}
+      id="contact"
+      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 "
+    >
       <div className="bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
         <form
           onSubmit={handleSubmit}
@@ -105,7 +115,6 @@ export default function ContactForms() {
           <div>
             <button
               type="submit"
-     
               className="sm:mt-12 mt-6 w-full py-2 px-6 rounded-xl text-black bg-white shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
             >
               Enviar
@@ -133,6 +142,6 @@ export default function ContactForms() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
