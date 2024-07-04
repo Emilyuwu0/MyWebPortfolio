@@ -41,3 +41,24 @@ body {
 ::-webkit-scrollbar-corner {
     background-color: #f1f1f1;
 }
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(20deg, #FFF5ED 0%, #F7D0D1 87%);
+    transform-origin: 0%;
+    z-index: 9;
+  }
+  /* Loading.css */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+  }
+
+  

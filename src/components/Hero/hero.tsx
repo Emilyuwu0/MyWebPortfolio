@@ -1,5 +1,5 @@
 import { useState } from "react";
-import HeroImg from "../../assets/UWU.png";
+import { fade } from 'astro:transitions';import HeroImg from "../../assets/UWU.png";
 import Icon from "../../assets/gato.png";
 import pdf from './cv.pdf';import { motion } from "framer-motion";
 export default function Hero() {
@@ -117,7 +117,7 @@ return (
           </div>
         </div>
         <div className="lg:w-1/2 lg:mt-0 flex justify-center lg:justify-end sm:absolute right-0 top-0 -mb-32 ">
-          <img src={HeroImg.src} className="max-w-full" alt="Header" />
+          <img src={HeroImg.src} className="max-w-full" alt="Header" transition:animate="slide"/>
         </div>
       </div>
     </header>

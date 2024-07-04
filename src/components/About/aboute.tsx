@@ -1,5 +1,9 @@
 import AboutMe from "../../assets/about_me.png";
+import { motion } from "framer-motion";
 import AboutMeMobile from "../../assets/aboutme-mobile.png";
+
+
+
 export default function Aboute() {
   return (
     <div
@@ -36,16 +40,29 @@ export default function Aboute() {
             cumplan con los requisitos funcionales, sino que también
             proporcionen una experiencia de usuario excepcional.
           </span>
+
           <div className="mt-10 flex sm:justify-start  justify-center mb-8 sm:mb-0 space-x-10">
             {navigation.social.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 target="_blank"
-                className="text-black hover:text-gray-500"
+                className="text-black hover:text-gray-500 box"
               >
+                {" "}
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <motion.div
+                  className="box"
+                  /**
+                   * Setting the initial keyframe to "null" will use
+                   * the current value to allow for interruptable keyframes.
+                   */
+                  whileHover={{ scale: [null, 1.5, 1.4] }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {" "}
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                </motion.div>
               </a>
             ))}
           </div>
@@ -139,3 +156,5 @@ const navigation = {
     },
   ],
 };
+
+<style></style>;
