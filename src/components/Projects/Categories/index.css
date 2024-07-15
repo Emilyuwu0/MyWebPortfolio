@@ -1,9 +1,9 @@
-
 @media (max-width: 768px) {
     .projects-cards {
         height: 20rem !important;
     }
-.ux-cards{
-    margin-bottom: -70rem !important;
-}
+
+    .ux-cards {
+        margin-bottom: -70rem !important;
+    }
 }
