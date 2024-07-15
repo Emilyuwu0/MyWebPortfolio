@@ -31,7 +31,7 @@ export default function UxPj() {
 
   return (
     <motion.div
-    className="ux-cards"
+
       variants={fadeIn("up", 0.4)}
       initial="hidden"
       whileInView="show"
