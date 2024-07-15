@@ -8,7 +8,7 @@ export default function Aboute() {
     <div>
       {" "}
       <motion.div
-        variants={fadeIn("left", 0.4)}
+        variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}

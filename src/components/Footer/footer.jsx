@@ -3,14 +3,7 @@ import { fadeIn } from "../Util/Variants";
 export default function Footers() {
   return (
     <>
-      <motion.div
-        variants={fadeIn("up", 0.4)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.5 }}
-        style={{ opacity: 0 }}
-        className=" bg-beige-light rounded-t-3xl  shadow-card"
-      >
+      <div className=" bg-beige-light rounded-t-3xl  shadow-card">
         <footer className=" rounded-lg">
           <div className="mx-auto max-w-7xl overflow-hidden px-6 py-18 sm:py-24 lg:px-8 pt-6 pb-6">
             <nav
@@ -43,7 +36,7 @@ export default function Footers() {
             </div>
           </div>
         </footer>
-      </motion.div>
+      </div>
     </>
   );
 }
