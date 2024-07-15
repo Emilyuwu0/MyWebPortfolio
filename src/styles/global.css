@@ -60,5 +60,14 @@ body {
     height: 100vh;
     font-size: 2em;
   }
-
+  .projects-cards {
+    height: 60rem !important;
+  }
   
+  
+@media (max-width: 768px) {
+    .contact-form {
+        margin-top: 65rem !important;
+    }
+
+  }

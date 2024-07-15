@@ -6,7 +6,7 @@ import ContactImgMobile from "../../assets/contact-mobile.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Util/Variants";
 import emailjs from "emailjs-com";
-
+import "../../styles/global.css"
 import "./contact.css";
 
 export default function ContactForms() {
@@ -57,13 +57,9 @@ export default function ContactForms() {
   };
   return (
     <motion.div
-      variants={fadeIn("down", 0.4)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.5 }}
-      style={{ opacity: 0 }}
+     
       id="contact"
-      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 "
+      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 contact-form"
     >
       <div className="bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
         <form

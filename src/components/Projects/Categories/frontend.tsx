@@ -6,6 +6,7 @@ import Ces from "../../../assets/projects/ces.png";
 import GWS from "../../../assets/projects/gws.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Util/Variants";
+import "./index.css";
 
 export default function FrontendPj() {
   const ProjectsUwu = [
@@ -50,18 +51,19 @@ export default function FrontendPj() {
       date: "Feb. 2024 - Dic. 2023",
       description: "Asociada con AntPack",
       url: "https://gws.antpk.co/login",
-    },
+    } /*    */,
   ];
 
   return (
     <motion.div
+      className="projects-cards"
       variants={fadeIn("up", 0.4)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
-      className="opacity-0"
+      style={{ opacity: 0 }}
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {ProjectsUwu.map((project) => (
           <div
             key={project.name}

@@ -2,25 +2,7 @@ import { motion } from "framer-motion";
 import "./skills.css";
 import { fadeIn } from "../Util/Variants";
 export default function Profesional() {
-  const Skill = [
-    {
-      name: "Equipo de trabajo",
-      level: "progress-value",
-    },
 
-    {
-      name: "Iniciativa",
-      level: "progress-value-medium",
-    },
-    {
-      name: "Creatividad",
-      level: "progress-value-medium",
-    },
-    {
-      name: "Dedicación",
-      level: "progress-value-loadintermediate",
-    },
-  ];
   return (
     <motion.div
       variants={fadeIn("up", 0.4)}
@@ -66,3 +48,22 @@ export default function Profesional() {
     </motion.div>
   );
 }
+  const Skill = [
+    {
+      name: "Equipo de trabajo",
+      level: "progress-value",
+    },
+
+    {
+      name: "Iniciativa",
+      level: "progress-value-medium",
+    },
+    {
+      name: "Creatividad",
+      level: "progress-value-medium",
+    },
+    {
+      name: "Dedicación",
+      level: "progress-value-loadintermediate",
+    },
+  ];

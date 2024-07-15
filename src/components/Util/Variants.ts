@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 type Direction = "up" | "down" | "left" | "right";
 
 interface Transition {
@@ -22,7 +22,7 @@ interface Animation {
 export const fadeIn = (direction: Direction, delay: number) => {
   return {
     hidden: {
-      y: direction === "up" ? 20 : direction === "down" ? -20 : 0,
+      y: direction === "up" ? 400 : direction === "down" ? -400 : 0,
       x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
     },
     show: {

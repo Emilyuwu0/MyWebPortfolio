@@ -2,7 +2,8 @@ import Arcadia from "../../../assets/projects/arcadia.png";
 import Port from "../../../assets/projects/port.jpg";
 import Porto from "../../../assets/projects/porto.jpg";
 import { motion } from "framer-motion";
-
+import { fadeIn } from "../../Util/Variants";
+import "./index.css"
 export default function UxPj() {
   const UxUwu = [
     {
@@ -30,11 +31,14 @@ export default function UxPj() {
 
   return (
     <motion.div
-      className="box"
-      whileHover={{ scale: 1.2 }}
-      transition={{ duration: 0.3 }}
+    className="ux-cards"
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
+      style={{ opacity: 0 }}
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="ux-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {UxUwu.map((project) => (
           <div
             key={project.name}
