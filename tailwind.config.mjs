@@ -10,6 +10,7 @@ export default {
 			'beige-light-color': "#FFF5ED",
 			"beige-dark":"#edc9ac",
 			"beige-light":"#f7f3f0",
+			"yellow-soft":"#FFF4E5",
 			"gray-light":"#E6E6E6",
 			"black": "#000",
 			"white":"#fff"

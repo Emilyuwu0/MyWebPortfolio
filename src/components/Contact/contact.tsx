@@ -57,7 +57,11 @@ export default function ContactForms() {
   };
   return (
     <motion.div
-     
+    variants={fadeIn("up", 0.4)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.5 }}
+    style={{ opacity: 0 }}
       id="contact"
       className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 mb-36 contact-form"
     >

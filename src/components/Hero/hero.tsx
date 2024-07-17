@@ -1,8 +1,11 @@
 import { useState } from "react";
 import HeroImg from "../../assets/UWU.png";
+
+import HeroMobileImg from "../../assets/menu-responsive.png";
 import Icon from "../../assets/gato.png";
-import pdf from "./cv.pdf";
+import pdf from "./cv-EmilyOrduz.pdf";
 import { motion } from "framer-motion";
+
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +20,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{
-          duration: 0.6,
-        }}
+        transition={{ duration: 0.2 }}
       >
         <div className=" sm:mx-28 2xl:mx-52  flex flex-col-reverse lg:flex-row items-center my-auto">
           <div className="lg:w-1/2 flex flex-col items-center md:items-start">
@@ -47,7 +48,7 @@ export default function Hero() {
               <img
                 src={Icon.src}
                 alt="logo"
-                className="w-10 md:hidden text-black focus:outline-none absolute top-2 left-4 z-50"
+                className="w-10 md:hidden text-black focus:outline-none absolute top-4 left-6 z-50"
               />
               <button
                 onClick={toggleMenu}
@@ -73,15 +74,19 @@ export default function Hero() {
             </nav>
             {/* Mobile Menu */}
             {isOpen && (
-              <ul className="md:hidden absolute top-0 left-0 pt-20 w-full shadow-md text-lg text-black py-4 space-y-4 text-center bg-beige-light-color h-[60rem] z-20">
+              <>
+              <ul className="md:hidden absolute top-0 left-0 pt-40 w-full shadow-md text-lg text-black py-4 space-y-4 text-center bg-yellow-soft h-[60rem] z-20">
                 {menuList.map((item) => (
                   <li key={item.title}>
-                    <a href={item.href} className="block hover:text-indigo-500">
+                    <a href={item.href} className="block text-xl">
                       {item.title}
                     </a>
                   </li>
                 ))}
+      
               </ul>
+              <img src={HeroMobileImg.src} alt="logo" className="mt-48 absolute z-50"/>
+              </>
             )}
             {/* Header Content */}
             <div className="sm:mt-40 2xl:mt-64 mt-20 sm:ml-6 sm:mr-6 flex flex-col items-center md:items-start text-center md:text-left">
@@ -128,7 +133,7 @@ export default function Hero() {
                   href={pdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="cv.pdf"
+                  download="cv-EmilyOrduz.pdf"
                   /* href="#curriculum" */
                   className="py-2 px-6 rounded-xl text-black bg-beige-light-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                 >

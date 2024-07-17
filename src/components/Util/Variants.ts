@@ -22,8 +22,8 @@ interface Animation {
 export const fadeIn = (direction: Direction, delay: number) => {
   return {
     hidden: {
-      y: direction === "up" ? 400 : direction === "down" ? -400 : 0,
-      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+      y: direction === "up" ? 15 : direction === "down" ? -15 : 0,
+      x: direction === "left" ? 15 : direction === "right" ? -15 : 0,
     },
     show: {
       y: 0,
