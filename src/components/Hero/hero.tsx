@@ -83,7 +83,7 @@ export default function Hero() {
                         transition={{ type: "spring", stiffness: 60 }}
                         className="absolute top-0 left-0 w-full h-[40rem] z-20 bg-mobile shadow-md"
                       >
-                        <ul className="md:hidden pt-20 text-lg text-black py-4 space-y-4 text-center">
+                        <ul className="md:hidden pt-20 text-lg text-black py-4 space-y-4 text-center bg-beige-light-color">
                           {menuList.map((item) => (
                             <li key={item.title}>
                               <a
