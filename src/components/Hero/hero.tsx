@@ -75,7 +75,7 @@ export default function Hero() {
             {/* Mobile Menu */}
             {isOpen && (
               <>
-              <ul className="md:hidden absolute top-0 left-0 pt-40 w-full shadow-md text-lg text-black py-4 space-y-4 text-center bg-yellow-soft h-[60rem] z-20">
+              <ul className="md:hidden absolute top-0 left-0 pt-32 w-full shadow-md text-lg text-black py-4 space-y-4 text-center bg-yellow-soft h-[60rem] z-20">
                 {menuList.map((item) => (
                   <li key={item.title}>
                     <a href={item.href} className="block text-xl">

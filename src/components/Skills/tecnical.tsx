@@ -20,7 +20,7 @@ import { fadeIn } from "../Util/Variants";
 export default function Tecnical() {
   return (
     <motion.div
-      variants={fadeIn("up", 0.4)}
+      variants={fadeIn("up", 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
