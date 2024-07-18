@@ -22,7 +22,7 @@ export default {
 				'bg-contact':"url('/src/assets/bg-contact.png')",
 			  },
 			  height: {
-				'160': '60rem',
+				'160': '40rem',
 			  }
 		},
 	},

@@ -4,6 +4,7 @@ import AboutMeMobile from "../../assets/aboutme-mobile.png";
 import { fadeIn } from "../Util/Variants";
 
 export default function Aboute() {
+  
   return (
     <div>
       {" "}
@@ -11,6 +12,7 @@ export default function Aboute() {
         variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView="show"
+            animate="visible"
         viewport={{ once: true, amount: 0.5 }}
         style={{ opacity: 0 }}
       >
