@@ -1,5 +1,5 @@
 import { useState } from "react";
-import HeroImg from "../../assets/UWU.png";
+import HeroImg from "../../assets/hero_image_kawaii.webp";
 
 import HeroMobileImg from "../../assets/menu-responsive.png";
 import Icon from "../../assets/gato.png";
