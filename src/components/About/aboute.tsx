@@ -2,43 +2,44 @@ import AboutMe from "../../assets/about_me.png";
 import { motion } from "framer-motion";
 import AboutMeMobile from "../../assets/aboutme-mobile.png";
 import { fadeIn } from "../Util/Variants";
-
+import "../../styles/global.css";
 export default function Aboute() {
-  
   return (
-    <div>
+    <div className=" bg-motion"> 
       {" "}
       <motion.div
         variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView="show"
-            animate="visible"
+        animate="visible"
         viewport={{ once: true, amount: 0.5 }}
         style={{ opacity: 0 }}
       >
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:mt-56 2xl:mt-80 p-4 rounded-3xl  "
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  sm:pt-56 2xl:pt-80 p-4 rounded-3xl  "
           id="aboutme"
         >
-          <div className="bg-pink-soft-color bg-[url('/src/assets/bg-contact.png')] sm:rounded-bl-2xl  sm:rounded-tl-2xl">
+          <div className="bg-pink-soft-color bg-[url('/src/assets/bg-contact.png')] sm:rounded-bl-2xlsm:rounded-tl-2xl">
             <img
               src={AboutMe.src}
-              className="mt-0 sm:-ml-20 -ml-24 2xl:ml-0 hidden sm:block"
+              className="mt-0 sm:-ml-20 -ml-24 2xl:ml-0 hidden sm:block bg-pink-soft-color z-50"
+              alt="aboutme"
             />
             <img
               src={AboutMeMobile.src}
               className="mt-0  -ml-0 2xl:ml-0 sm:hidden bg-white"
+              alt="aboutme"
             />
           </div>
           <div className="bg-pink-soft-color p-4 bg-[url('/src/assets/bg-contact.png')] text-black rounded-b-lg sm:rounded-b-none sm:rounded-br-2xl  sm:rounded-tr-2xl  sm:p-2">
-            <div className="sm:mt-20">
-              <span className="block text-3xl font-medium mb-4 text-center sm:text-left">
+            <div className="sm:mt-20 bg-pink-soft-color">
+              <span className="block text-3xl font-medium mb-4 text-center sm:text-left bg-pink-soft-color">
                 Sobre Mí
               </span>
-              <span className="block text-xl font-medium mb-10 text-center sm:text-left">
+              <span className="block text-xl font-medium mb-10 text-center sm:text-left bg-pink-soft-color">
                 Emily Tatiana Orduz Barrera
               </span>
-              <span className="sm:pr-24 block text-center sm:text-left">
+              <span className="sm:pr-24 block text-center sm:text-left bg-pink-soft-color">
                 Soy una desarrolladora frontend con una sólida experiencia en la
                 creación de interfaces de usuario intuitivas y visualmente
                 atractivas. Utilizo tecnologías modernas como React, Vue y
@@ -51,7 +52,7 @@ export default function Aboute() {
                 proporcionen una experiencia de usuario excepcional.
               </span>
 
-              <div className="mt-10 flex sm:justify-start  justify-center mb-8 sm:mb-0 space-x-10">
+              <div className="mt-10 flex sm:justify-start  justify-center mb-8 sm:mb-0 space-x-10 bg-pink-soft-color">
                 {navigation.social.map((item) => (
                   <a
                     key={item.name}

@@ -15,7 +15,7 @@ export default function Hero() {
   const subTitle = "Frontend Developer 💻 ".split(" ");
 
   return (
-    <header className="pb-10 relative z-40 bg-white ">
+    <header className="pb-10 relative z-40 bg-white bg-motion">
       <LazyMotion features={domAnimation}>
         <motion.div
           initial={{ opacity: 0 }}
@@ -26,23 +26,32 @@ export default function Hero() {
             <div className="lg:w-1/2 flex flex-col items-center md:items-start">
               <nav>
                 {/* Desktop Menu */}
-                <ul className="hidden absolute top-4 space-x-4 sm:flex font-medium z-10 mt-2 cursor-pointer text-lg text-black">
-                  {menuList.map((item) => (
-                    <div className="flex " key={item.title}>
+
+                <ul className="hidden absolute top-4 space-x-4 sm:flex font-medium z-10 mt-12 ml-2 cursor-pointer text-lg text-black">
+                  {menuList.map((item, index) => (
+                    <div
+                      className={`flex ${
+                        index !== 0 && index !== menuList.length - 1
+                          ? "border-r-4 border-gray-300 pr-4 border-pink-soft-color h-6"
+                          : ""
+                      }`}
+                      key={item.title}
+                    >
                       {item.img && (
                         <img
                           src={item.img}
-                          className="w-12 border-none"
+                          className="w-12 border-none -mt-4"
                           alt={item.title}
                         />
                       )}
 
-                      <a className="mt-4" key={item.title} href={item.href}>
+                      <a className="" key={item.title} href={item.href}>
                         {item.title}
                       </a>
                     </div>
                   ))}
                 </ul>
+
                 {/* Mobile Menu Button */}
 
                 <img

@@ -1,8 +1,7 @@
 import { useState } from "react";
 import FrontendPj from "./Categories/frontend";
 import UxPj from "./Categories/ux";
-import { motion } from "framer-motion";
-import { fadeIn } from "../Util/Variants";
+import "../../styles/global.css";
 export default function ProjectsCv() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -14,9 +13,9 @@ export default function ProjectsCv() {
     { label: "Ux / Ui ", content: <UxPj /> },
   ];
   return (
-    <div id="project">
+    <div id="project" className="bg-motion">
       {" "}
-      <span className="block text-3xl font-medium text-center text-black mt-40 ">
+      <span className="block text-3xl font-medium text-center text-black pt-24 ">
         Proyectos
       </span>
       <div className=" bg-[url('/src/assets/bg-projects.png')] bg-cover">

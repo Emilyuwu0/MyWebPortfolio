@@ -25,12 +25,8 @@ export default function Tecnical() {
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
       style={{ opacity: 0 }}
-      className="container mx-auto p-4 bg-pink-light-color rounded-xl "
+      className="container mx-auto p-4 bg-pink-light-color rounded-xl sm:mb-32"
     >
-      {/*  <h2 className="mb-10 text-xl text-center mt-4 font-semibold">
-        Mis habilidades tecnicas 🍥
-      </h2> */}
-
       <div
         id="contact"
         className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 p-4  "

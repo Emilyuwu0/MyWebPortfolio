@@ -9,7 +9,7 @@ export default function Profesional() {
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
       style={{ opacity: 0 }}
-      className="container mx-auto p-8 bg-beige-light-color  rounded-xl"
+      className="container mx-auto p-8 bg-beige-light-color  rounded-xl sm:mb-32"
     >
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 p-4 bg-gray-200">
