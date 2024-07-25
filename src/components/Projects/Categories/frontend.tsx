@@ -1,9 +1,9 @@
-import IPCOM from "../../../assets/projects/ipcom.png";
-import INNOVA from "../../../assets/projects/innvoa.png";
-import Lil from "../../../assets/projects/lilIn.jpg";
-import Shipyard from "../../../assets/projects/ship.jpg";
-import Ces from "../../../assets/projects/ces.png";
-import GWS from "../../../assets/projects/gws.png";
+import IPCOM from "../../../assets/projects/ipcom.webp";
+import INNOVA from "../../../assets/projects/innvoa.webp";
+import Lil from "../../../assets/projects/lilIn.webp";
+import Shipyard from "../../../assets/projects/ship.webp";
+import Ces from "../../../assets/projects/ces.webp";
+import GWS from "../../../assets/projects/gws.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Util/Variants";
 import "./index.css";
@@ -11,48 +11,42 @@ import "./index.css";
 export default function FrontendPj() {
   const ProjectsUwu = [
     {
-      imgProject:
-        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/ipcom.webp",
+      imgProject:IPCOM.src,
       name: "Pagina Web IPCOM",
       date: "Sept. 2021 - Feb. 2022",
       description: "Asociada con IPCOM",
       url: "https://ipcom.ai",
     },
     {
-      imgProject:
-        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/innvoa.webp",
+      imgProject:INNOVA.src,
       name: "Pagina Web INNOVA",
       date: "Sept. 2022 ",
       description: "Freelance",
       url: "https://innovapya.com/#!/-bienvenido/",
     },
     {
-      imgProject:
-        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/lilIn.webp",
+      imgProject:Lil.src,
       name: "Pagina Web Lil Interns",
       date: "Dic. 2022 - Ene. 2023",
       description: "Asociada con AntPack",
       url: "https://www.lilinterns.com",
     },
     {
-      imgProject:
-        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/ship.webp",
+      imgProject:Shipyard.src,
       name: "Intranet Shipyard",
       date: "Oct. 2022 - Ene. 2023",
       description: "Asociada con AntPack",
       url: "https://tryshipyard.com",
     },
     {
-      imgProject:
-        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/ces.webp",
+      imgProject:Ces.src,
       name: "Pagina Web Ceslegal",
       date: "Abr. 2023 ",
       description: "Freelance",
       url: "https://ceslegal.co",
     },
     {
-      imgProject:
-        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/gws.webp",
+      imgProject:GWS.src,
       name: "Intranet Gws",
       date: "Feb. 2024 - Dic. 2023",
       description: "Asociada con AntPack",

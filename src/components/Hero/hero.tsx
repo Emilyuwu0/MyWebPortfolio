@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { motion, LazyMotion, domAnimation, m } from "framer-motion";
 import ImageWithLoading from "../Util/ImageLoader";
+import HeroImg from "../../assets/hero.webp";
+import ImgHeroMobile from "../../assets/menu_mobile.webp";
 import Icon from "../../assets/gato.png";
 import pdf from "./cv-EmilyOrduz.pdf";
-
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -106,7 +107,7 @@ export default function Hero() {
                           </div>
 
                           <ImageWithLoading
-                            src="https://storage.cloud.google.com/portafoliopruebauwu0/menu_mobile.webp"
+                            src={ImgHeroMobile.src}
                             alt="logo"
                             className="-mt-0 z-50 "
                           />
@@ -181,7 +182,7 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src="https://storage.cloud.google.com/portafoliopruebauwu0/UWU.webp"
+                  src={HeroImg.src}
                   className="max-w-full"
                   alt="Header"
                   loading="lazy"

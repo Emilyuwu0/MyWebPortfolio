@@ -1,25 +1,29 @@
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Util/Variants";
+import Arcadia from "../../../assets/projects/arcadia.webp";
+import Port from "../../../assets/projects/portfo.webp";
+import Porto from "../../../assets/projects/porto.webp";
+
 import "./index.css"
 export default function UxPj() {
   const UxUwu = [
     {
-      imgProject:"https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/arcadia.webp",
-      name: "Arcadia Rp",
+      imgProject:Arcadia.src,
+            name: "Arcadia Rp",
       date: "Dic. 2023",
       description: "Freelance",
       url: "https://arcadiarp.vercel.app",
     },
     {
-      imgProject: "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/portfo.webp",
+      imgProject: Port.src,
       name: "Portafolio",
       date: "Enero. 2024",
       description: "Freelance",
       url: "https://tsukiiyamero.xyz",
     },
     {
-      imgProject: "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/porto.webp",
+      imgProject: Porto.src,
       name: "Portafolio",
       date: "Feb. 2024",
       description: "Freelance",
