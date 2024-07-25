@@ -8,7 +8,7 @@
   .loading-spinner {
     background:white;
     position: absolute;
-    top: 20rem;
+    top: 30rem;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 8px solid #F7C4DB;
