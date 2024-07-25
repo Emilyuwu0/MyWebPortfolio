@@ -9,7 +9,7 @@ export default function Hero() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const text = "Emily Tatiana Orduz ".split(" ");
+  const text = "Emily Orduz ".split(" ");
   const subTitle = "Frontend Developer  💻 ".split(" ");
 
   return (

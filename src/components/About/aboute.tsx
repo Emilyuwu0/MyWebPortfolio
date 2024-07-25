@@ -32,11 +32,11 @@ export default function Aboute() {
             />
           </div>
           <div className=" shadow-right-card bg-pink-soft-color p-4 bg-[url('/src/assets/bg-contact.png')] text-black rounded-b-lg sm:rounded-b-none sm:rounded-br-2xl  sm:rounded-tr-2xl  sm:p-2">
-            <div className="sm:mt-20 ">
+            <div className="sm:mt-20  ">
               <span className="block text-3xl font-medium mb-4 text-center sm:text-left bg-pink-soft-color">
                 Sobre Mí
               </span>
-              <span className="block text-xl font-medium mb-10 text-center sm:text-left bg-pink-soft-color">
+              <span className="block text-xl font-medium mb-10 text-center sm:text-left bg-pink-soft-color ">
                 Emily Tatiana Orduz Barrera
               </span>
               <span className="sm:pr-24 block text-center sm:text-left bg-pink-soft-color">
