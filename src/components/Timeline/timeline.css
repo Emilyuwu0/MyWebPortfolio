@@ -15,8 +15,8 @@ display:none !important;
 
 @media (min-width: 1210px) and (max-width: 1290px) {
   .timeline-img {
-      width: 30rem;
-      right: 11rem;
+      width: 30.9rem;
+      right: 9rem;
   }
 
   .size-alert {
@@ -30,7 +30,7 @@ display:none !important;
 
 @media (min-width: 1300px) and (max-width: 1499px) {
   .timeline-img {
-      width: 30.05rem;
+      width: 30.9rem;
       margin-top: 0rem;
       right: 14rem;
 
@@ -40,14 +40,14 @@ display:none !important;
 
 @media (min-width: 1500px) and (max-width: 1670px) {
   .timeline-img {
-      width: 29.66rem;
+      width: 30.65rem;
       right: 18rem;
   }
 }
 
 @media (min-width: 1700px) and (max-width: 2800px) {
   .timeline-img {
-    width: 29.7rem;
+    width: 30.65rem;
     right: 29rem;
     margin-top: 0rem;
   }

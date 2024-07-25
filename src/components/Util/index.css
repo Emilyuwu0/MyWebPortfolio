@@ -1,0 +1,31 @@
+
+
+.image-container {
+    position: relative;
+  
+  }
+  
+  .loading-spinner {
+    background:white;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #F7C4DB;
+    border-top: 8px solid #F7C4DB;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+ 
+
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  .image.hidden {
+    display: none;
+  }
+  

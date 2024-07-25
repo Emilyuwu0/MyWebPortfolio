@@ -15,7 +15,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className=" bg-motion">
+    <div className=" bg-motion ">
       <div
         id="skills"
         className="bg-[url('/src/assets/bg-projects.png')] bg-cover sm:mb-2 pb-28 sm:p-2 p-4 "
@@ -39,7 +39,7 @@ export default function Skills() {
               </button>
             ))}
           </div>
-          <div className="sm:pl-10 sm:pr-10 sm:pt-4 sm:pb-10 text-black  rounded-md mt-6 sm:-mx-96">
+          <div className="sm:pl-10 sm:pr-10 sm:pt-4 sm:pb-10 text-black  rounded-md mt-6 sm:-mx-96 ">
             {tabs[activeTab].content}
           </div>
         </div>

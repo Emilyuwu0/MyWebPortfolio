@@ -64,9 +64,9 @@ export default function ContactForms() {
         viewport={{ once: true, amount: 0.5 }}
         style={{ opacity: 0 }}
         id="contact"
-        className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 pb-48 contact-form"
+        className=" grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  p-2 sm:pl-16 2xl:pl-28 sm:pr-24 pb-48 contact-form"
       >
-        <div className="bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
+        <div className=" shadow-right-card bg-pink-soft-color sm:rounded-l-2xl sm:rounded-tl-2xl sm:rounded-r-none sm:rounded-tr-none  rounded-2xl rounded-br-none rounded-bl-none bg-[url('/src/assets/bg-contact.png')] bg-cover">
           <form
             onSubmit={handleSubmit}
             className="sm:pr-14 sm:pl-14 sm:pb-10 sm:pt-10 sm:p-4 p-8"
@@ -127,7 +127,7 @@ export default function ContactForms() {
             </div>
           </form>
         </div>
-        <div className="bg-pink-soft-color bg-responsive text-black bg-[url('/src/assets/bg-contact.png')] bg-cover rounded-br-2xl rounded-bl-2xl sm:rounded-bl-none  sm:rounded-tr-2xl">
+        <div className="shadow-right-card bg-pink-soft-color bg-responsive text-black bg-[url('/src/assets/bg-contact.png')] bg-cover rounded-br-2xl rounded-bl-2xl sm:rounded-bl-none  sm:rounded-tr-2xl">
           <div className="bg-[url('/src/assets/bg-contact.png')] bg-cover">
             <img
               src={ContactImg.src}

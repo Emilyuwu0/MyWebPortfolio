@@ -10,6 +10,7 @@ export default {
 			'beige-light-color': "#FFF5ED",
 			"beige-dark":"#edc9ac",
 			"beige-light":"#f7f3f0",
+			"beige-soft":"#FFF9F4",
 			"yellow-soft":"#FFF4E5",
 			"gray-light":"#E6E6E6",
 			"black": "#000",
@@ -23,6 +24,12 @@ export default {
 			  },
 			  height: {
 				'160': '40rem',
+			  },
+			  boxShadow:{
+				'right-card': '12px 12px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+			  },
+			  margin:{
+				'13rem':"3.1rem"
 			  }
 		},
 	},

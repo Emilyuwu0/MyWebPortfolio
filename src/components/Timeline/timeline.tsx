@@ -53,10 +53,10 @@ export default function TimelineMe() {
           }}
         >
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2  p-4 sm:p-0 rounded-xl container m-auto sm:w-3/5 2xl:w-2/4  bg-motion"
+            className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2  p-4 sm:p-0 rounded-xl container m-auto sm:w-3/5 2xl:w-2/4  bg-motion"
             id="exp"
           >
-            <div className="bg-pink-soft-color p-8 sm:p-4 xl:p-4 2xl:p-2 text-black sm:rounded-l-xl rounded-t-xl sm:rounded-none">
+            <div className="sm:shadow-right-card bg-pink-soft-color p-8 sm:p-4 xl:p-4 2xl:p-2 text-black sm:rounded-l-xl rounded-t-xl sm:rounded-none">
               <div>
                 <span className="block text-3xl font-medium mb-6 sm:mb-10 text-center sm:text-left sm:ml-14 pt-6 sm:mt-6 2xl:mt-8 ">
                   Experiencia
@@ -88,13 +88,21 @@ export default function TimelineMe() {
                                 </span>{" "}
                               </div>
                             </div>
-
-                            <div className="bg-pink-light-color p-4  mb-6 rounded sm:w-96 2xl:w-72 sm:ml-8 shadow ">
-                              <span className="text-sm block">
-                                {activityItem.date}
-                              </span>
-                              {activityItem.item}
-                            </div>
+                            <motion.div
+                              animate={{
+                                x: 20,
+                                y: 0,
+                                scale: 1,
+                                rotate: 0,
+                              }}
+                            >
+                              <div className="bg-pink-light-color p-4  mb-6 rounded sm:w-96 2xl:w-72 sm:ml-2 shadow ">
+                                <span className="text-sm block">
+                                  {activityItem.date}
+                                </span>
+                                {activityItem.item}
+                              </div>
+                            </motion.div>
                           </div>
                         </div>
                       ))}
@@ -104,7 +112,7 @@ export default function TimelineMe() {
               </div>
             </div>
             {/*  uno */}
-            <div className="bg-pink-soft-color  sm:rounded-r-3xl">
+            <div className="sm:bg-pink-soft-color  sm:rounded-r-3xl sm:shadow-right-card">
               <img
                 src={Timeline.src}
                 alt="timeline"
@@ -113,7 +121,8 @@ export default function TimelineMe() {
 
               <img
                 src={TimelineMobile.src}
-                className="mt-0  -ml-0 2xl:ml-0 sm:hidden bg-white"
+                className="mt-0  -ml-0 2xl:ml-0 sm:hidden "
+                alt="timeline"
               />
             </div>
           </div>{" "}

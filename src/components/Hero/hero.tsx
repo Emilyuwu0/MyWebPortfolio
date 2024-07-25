@@ -1,18 +1,16 @@
 import { useState } from "react";
-import HeroImg from "../../assets/hero_image_kawaii.webp";
-
-import HeroMobileImg from "../../assets/menu-responsive.png";
+import { motion, LazyMotion, domAnimation, m } from "framer-motion";
+import ImageWithLoading from "../Util/ImageLoader";
 import Icon from "../../assets/gato.png";
 import pdf from "./cv-EmilyOrduz.pdf";
-import { motion, LazyMotion, domAnimation, m } from "framer-motion";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const text = "Emily Orduz ".split(" ");
-  const subTitle = "Frontend Developer 💻 ".split(" ");
+  const text = "Emily Tatiana Orduz ".split(" ");
+  const subTitle = "Frontend Developer  💻 ".split(" ");
 
   return (
     <header className="pb-10 relative z-40 bg-white bg-motion">
@@ -32,7 +30,7 @@ export default function Hero() {
                     <div
                       className={`flex ${
                         index !== 0 && index !== menuList.length - 1
-                          ? "border-r-4 border-gray-300 pr-4 border-pink-soft-color h-6"
+                          ? "border-r-4 border-gray-300 pr-4 border-pink-soft-color h-6 rounded-t-full rounded-b-full"
                           : ""
                       }`}
                       key={item.title}
@@ -90,23 +88,27 @@ export default function Hero() {
                         initial={{ x: "-100%" }}
                         animate={{ x: 0 }}
                         transition={{ type: "spring", stiffness: 60 }}
-                        className="absolute top-0 left-0 w-full h-[40rem] z-20 bg-mobile shadow-md"
+                        className="absolute top-0 left-0 w-full h-[40rem] z-20 bg-mobile "
                       >
-                        <ul className="md:hidden pt-20 text-lg text-black py-4 space-y-4 text-center bg-beige-light-color">
-                          {menuList.map((item) => (
-                            <li key={item.title}>
-                              <a
-                                href={item.href}
-                                className="block text-lg mb-2"
-                              >
-                                {item.title}
-                              </a>
-                            </li>
-                          ))}
-                          <img
-                            src={HeroMobileImg.src}
+                        <ul className="md:hidden pt-20 text-lg text-black py-4 space-y-4 text-center bg-beige-light-color bg-motion-mobile  h-[40rem]">
+                          <div className="bg-beige-soft ml-13rem mr-13rem p-2 rounded-t-lg -mb-10 pt-8">
+                            {" "}
+                            {menuList.map((item) => (
+                              <li key={item.title}>
+                                <a
+                                  href={item.href}
+                                  className="block text-lg mb-2"
+                                >
+                                  {item.title}
+                                </a>
+                              </li>
+                            ))}{" "}
+                          </div>
+
+                          <ImageWithLoading
+                            src="https://storage.cloud.google.com/portafoliopruebauwu0/menu_mobile.webp"
                             alt="logo"
-                            className="mt-56 z-50"
+                            className="-mt-0 z-50 "
                           />
                         </ul>
                       </motion.div>
@@ -132,13 +134,13 @@ export default function Hero() {
                   ))}
                 </h1>
                 <div className="sm:text-2xl text-xl mt-6">
-                  <h4 className="text-black font-medium">
+                  <h2 className="text-black font-medium">
                     {subTitle.map((el, i) => (
                       <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{
-                          duration: 0.6,
+                          duration: 2.5,
                           delay: i / 20,
                         }}
                         key={i}
@@ -146,12 +148,12 @@ export default function Hero() {
                         {el}{" "}
                       </motion.span>
                     ))}
-                  </h4>
+                  </h2>
                 </div>
                 <div className="flex space-x-4 mt-10">
                   <a
                     href="#aboutme"
-                    className="py-2 px-6 rounded-xl text-black bg-pink-soft-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                    className=" text-lg py-2 px-8 rounded-xl text-black bg-pink-soft-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   >
                     Sobre mí
                   </a>
@@ -161,7 +163,7 @@ export default function Hero() {
                     rel="noopener noreferrer"
                     download="cv-EmilyOrduz.pdf"
                     /* href="#curriculum" */
-                    className="py-2 px-6 rounded-xl text-black bg-beige-light-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                    className="text-lg py-2 px-6 rounded-xl text-black bg-beige-light-color shadow-lg transition transform hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   >
                     Curriculum
                   </a>
@@ -179,7 +181,7 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src={HeroImg.src}
+                  src="https://storage.cloud.google.com/portafoliopruebauwu0/UWU.webp"
                   className="max-w-full"
                   alt="Header"
                   loading="lazy"

@@ -11,42 +11,48 @@ import "./index.css";
 export default function FrontendPj() {
   const ProjectsUwu = [
     {
-      imgProject: IPCOM.src,
+      imgProject:
+        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/ipcom.webp",
       name: "Pagina Web IPCOM",
       date: "Sept. 2021 - Feb. 2022",
       description: "Asociada con IPCOM",
       url: "https://ipcom.ai",
     },
     {
-      imgProject: INNOVA.src,
+      imgProject:
+        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/innvoa.webp",
       name: "Pagina Web INNOVA",
       date: "Sept. 2022 ",
       description: "Freelance",
       url: "https://innovapya.com/#!/-bienvenido/",
     },
     {
-      imgProject: Lil.src,
+      imgProject:
+        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/lilIn.webp",
       name: "Pagina Web Lil Interns",
       date: "Dic. 2022 - Ene. 2023",
       description: "Asociada con AntPack",
       url: "https://www.lilinterns.com",
     },
     {
-      imgProject: Shipyard.src,
+      imgProject:
+        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/ship.webp",
       name: "Intranet Shipyard",
       date: "Oct. 2022 - Ene. 2023",
       description: "Asociada con AntPack",
       url: "https://tryshipyard.com",
     },
     {
-      imgProject: Ces.src,
+      imgProject:
+        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/ces.webp",
       name: "Pagina Web Ceslegal",
       date: "Abr. 2023 ",
       description: "Freelance",
       url: "https://ceslegal.co",
     },
     {
-      imgProject: GWS.src,
+      imgProject:
+        "https://storage.cloud.google.com/portafoliopruebauwu0/proyectos/gws.webp",
       name: "Intranet Gws",
       date: "Feb. 2024 - Dic. 2023",
       description: "Asociada con AntPack",
@@ -78,6 +84,7 @@ export default function FrontendPj() {
                 src={project.imgProject}
                 alt={project.name}
                 className="object-cover w-full h-full"
+                loading="lazy"
               />
             </motion.div>
             <div className="p-6">

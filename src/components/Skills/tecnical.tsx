@@ -25,7 +25,7 @@ export default function Tecnical() {
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
       style={{ opacity: 0 }}
-      className="container mx-auto p-4 bg-pink-light-color rounded-xl sm:mb-32"
+      className="container mx-auto p-4 bg-pink-light-color rounded-xl sm:mb-32 shadow-lg"
     >
       <div
         id="contact"
