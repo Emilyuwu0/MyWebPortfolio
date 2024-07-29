@@ -66,7 +66,7 @@ export default function TimelineMe() {
                   <div className="flex flex-col  ">
                     <div className="w-full  mx-auto sm:border-l-4 lg:ml-8  sm:ml-14 border-pink-light-color">
                       {Activity.map((activityItem) => (
-                        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                        <div key={activityItem.id} className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
                           <div className="relative ">
                             <div className="md:flex items-center md:space-x-4 mb-3 sm:ml-8">
                               <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse ">

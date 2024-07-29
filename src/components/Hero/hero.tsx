@@ -1,18 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, LazyMotion, domAnimation, m } from "framer-motion";
 import ImageWithLoading from "../Util/ImageLoader";
 import HeroImg from "../../assets/hero.webp";
 import ImgHeroMobile from "../../assets/menu_mobile.webp";
+import { useLoading } from '../Util/loading/loadingContext';
 import Icon from "../../assets/gato.png";
 import pdf from "./cv-EmilyOrduz.pdf";
 export default function Hero() {
+  const { setLoading } = useLoading();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const text = "Emily Orduz ".split(" ");
   const subTitle = "Frontend Developer  💻 ".split(" ");
-
+  useEffect(() => {
+ 
+    setLoading(false);
+  }, [setLoading]);
   return (
     <header className="pb-10 relative z-40 bg-white bg-motion">
       <LazyMotion features={domAnimation}>

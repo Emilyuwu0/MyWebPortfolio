@@ -10,25 +10,49 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Portafolio de Emily Orduz, Frontend Developer. 💻 Dale un vistazo a mi curriculum!">
+    <!-- Primary Meta Tags -->
+    <title>Emily Orduz 🍥</title>
+    <meta name="title" content="Emily Orduz 🍥" />
+    <meta
+      name="description"
+      content="Soy una desarrolladora Frontend con una sólida experiencia en la creación de interfaces de usuario intuitivas y visualmente atractivas. Utilizo tecnologías modernas como React, Vue y Gatsby para desarrollar aplicaciones web responsivas, centradas en la accesibilidad y el rendimiento. 💻"
+    />
 
-    <meta property="og:type" content="website">
-     <meta property="og:image" content="../assets/gato.png">
-    <meta property='og:url' content='https://co.pinterest.com/pin/844706473889174302' />
-    <meta name="keywords" content="web diseño, diseño web, programación, frontend, developer, desarrollo web, Emily Orduz">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emily-orduz.zeabur.app/" />
+    <meta property="og:title" content="Emily Orduz 🍥" />
+    <meta
+      property="og:description"
+      content="Soy una desarrolladora Frontend con una sólida experiencia en la creación de interfaces de usuario intuitivas y visualmente atractivas. Utilizo tecnologías modernas como React, Vue y Gatsby para desarrollar aplicaciones web responsivas, centradas en la accesibilidad y el rendimiento. 💻"
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
 
-    <meta http-equiv="Content-Language" content="es">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://emily-orduz.zeabur.app/" />
-    <meta property="twitter:title" content="Curriculum Emily Orduz 🍥" />
-    <meta property="twitter:description" content="Portafolio de Emily Orduz, Frontend Developer. 💻 Dale un vistazo a mi trabajo!" />
-    <meta property="twitter:image" content="https://emily-orduz.zeabur.app/_astro/contact.BdqnrIJj.png" />
-    
-    <link rel="preconnect" href="https://your-cdn.com">
-    <link rel="preload" href="../assets/hero.webp" as="image">
+    <meta property="twitter:title" content="Emily Orduz 🍥" />
+    <meta
+      property="twitter:description"
+      content="Soy una desarrolladora Frontend con una sólida experiencia en la creación de interfaces de usuario intuitivas y visualmente atractivas. Utilizo tecnologías modernas como React, Vue y Gatsby para desarrollar aplicaciones web responsivas, centradas en la accesibilidad y el rendimiento. 💻"
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <meta
+      name="keywords"
+      content="web diseño, diseño web, programación, frontend, developer, desarrollo web, Emily Orduz"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://your-cdn.com" />
+    <link rel="preload" href="../assets/hero.webp" as="image" />
     <link rel="icon" type="image/svg+xml" href="/gato.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,6 +67,8 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
+
+
 <style is:global>
   @tailwind base;
   @tailwind components;

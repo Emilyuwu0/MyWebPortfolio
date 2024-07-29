@@ -9,24 +9,21 @@ import ProjectsCv from "../components/Projects/projects";
 import ContactForm from "../components/Contact/contact";
 import Footer from "../components/Footer/footer";
 
-import ProgressBar from "../components/Others/ProgressBar";
+import ProgressBar from "../components/Util/ProgressBar";
 
 import "../styles/global.css";
-import Loading from "../components/Others/Loading";
 ---
 
 <Layout title="Curriculum Emily Orduz 🍥">
   <main>
-    <div id="loading">Cargando...</div>
-    <Loading client:load/>
-    <ProgressBar client:load />
-    <Hero client:load />
-    <Aboute client:load />
-    <Skills client:load />
-    <TimelineMe client:load />
-    <ProjectsCv client:load />
-    <ContactForm client:load />
-    <Footer client:load />
+    <ProgressBar client:only="react" />
+    <Hero client:only="react" />
+    <Aboute client:idle />
+    <Skills client:only="react" />
+    <TimelineMe client:idle />
+    <ProjectsCv client:only="react" />
+    <ContactForm client:only="react" />
+    <Footer client:only="react" />
   </main>
 </Layout>
 
@@ -46,6 +43,5 @@ import Loading from "../components/Others/Loading";
     z-index: 9999;
     font-size: 2rem;
     color: #333;
-    display: none; /* Oculto por defecto */
   }
 </style>
