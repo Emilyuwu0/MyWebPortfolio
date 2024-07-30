@@ -1,6 +1,6 @@
 import AboutMe from "../../assets/about_me.png";
 import { motion } from "framer-motion";
-import AboutMeMobile from "../../assets/aboutme-mobile.png";
+import AboutMeMobile from "../../assets/aboutme-mobile.webp";
 import { fadeIn } from "../Util/Variants";
 import "../../styles/global.css";
 export default function Aboute() {
@@ -19,7 +19,7 @@ export default function Aboute() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  sm:pt-56 2xl:pt-80 p-4 rounded-3xl  "
           id="aboutme"
         >
-          <div className="shadow-right-card bg-pink-soft-color bg-[url('/src/assets/bg-contact.png')] sm:rounded-bl-2xl sm:rounded-tl-2xl">
+          <div className="sm:shadow-right-card bg-pink-soft-color bg-[url('/src/assets/bg-contact.png')] sm:rounded-bl-2xl sm:rounded-tl-2xl">
             <img
               src={AboutMe.src}
               className="mt-0 sm:-ml-20 -ml-24 2xl:ml-0 hidden sm:block "
@@ -27,7 +27,7 @@ export default function Aboute() {
             />
             <img
               src={AboutMeMobile.src}
-              className="mt-0  -ml-0 2xl:ml-0 sm:hidden  bg-motion"
+              className="mt-0  -ml-0 2xl:ml-0 sm:hidden  bg-motion w-full"
               alt="aboutme"
             />
           </div>

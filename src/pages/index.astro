@@ -1,6 +1,6 @@
 ---
+import { useState, useEffect } from "react";
 import Layout from "../layouts/Layout.astro";
-
 import Hero from "../components/Hero/hero";
 import Aboute from "../components/About/aboute";
 import Skills from "../components/Skills/skills";
@@ -8,7 +8,7 @@ import TimelineMe from "../components/Timeline/timeline";
 import ProjectsCv from "../components/Projects/projects";
 import ContactForm from "../components/Contact/contact";
 import Footer from "../components/Footer/footer";
-
+import LoadComponents from "../components/Util/loadComponents/LoadComponents";
 import ProgressBar from "../components/Util/ProgressBar";
 
 import "../styles/global.css";
@@ -16,14 +16,10 @@ import "../styles/global.css";
 
 <Layout title="Curriculum Emily Orduz 🍥">
   <main>
+    <>
+      <LoadComponents client:only="react" />
+    </>
     <ProgressBar client:only="react" />
-    <Hero client:only="react" />
-    <Aboute client:idle />
-    <Skills client:only="react" />
-    <TimelineMe client:idle />
-    <ProjectsCv client:only="react" />
-    <ContactForm client:only="react" />
-    <Footer client:only="react" />
   </main>
 </Layout>
 

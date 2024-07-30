@@ -31,7 +31,7 @@ export const fadeIn = (direction: Direction, delay: number) => {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 1.0,
+        duration: 0.8,
         delay: delay,
         ease: [0.25, 0.25, 0.25, 0.25],
       },

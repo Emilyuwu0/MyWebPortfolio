@@ -1,16 +1,4 @@
-import Html from "../../assets/skills/html.png";
-import Js from "../../assets/skills/js.png";
-import React from "../../assets/skills/react.png";
-import Vue from "../../assets/skills/vue.png";
-import Gatsby from "../../assets/skills/gatsby.png";
-import CS33 from "../../assets/skills/css.png";
-import Tailwind from "../../assets/skills/tailwind.png";
-import Boots from "../../assets/skills/bootstrap.png";
-import Sass from "../../assets/skills/sass.png";
-import Figma from "../../assets/skills/figma.png";
-import Zeplin from "../../assets/skills/zeplin.png";
-import Ps from "../../assets/skills/ps.png";
-import xD from "../../assets/skills/xd.png";
+
 
 import LogoFront from "../../assets/programacion.png";
 import LogoUx from "../../assets/ux.png";
@@ -82,66 +70,66 @@ export default function Tecnical() {
 }
 const ImgSkillsFront = [
   {
-    image: Html,
+   
     title: "Html5",
   },
   {
-    image: Js,
+  
     title: "JavaScript",
   },
   {
-    image: Js,
+  
     title: "TypeScript",
   },
   {
-    image: React,
+
     title: "React",
   },
   {
-    image: Vue,
+
     title: "Vue 3",
   },
   {
-    image: Gatsby,
+   
     title: "Gatsby ",
   },
   {
-    image: Gatsby,
+   
     title: "Astro ",
   },
   {
-    image: CS33,
+
     title: "Css 3",
   },
   {
-    image: Tailwind,
+  
     title: "Tailwind",
   },
   {
-    image: Boots,
+
     title: "Bootstrap",
   },
   {
-    image: Sass,
+  
     title: "Sass",
   },
 ];
 
 const ImgSkillsUx = [
   {
-    image: Figma,
+
     title: "Figma",
   },
   {
-    image: Zeplin,
+  
     title: "Zeplin",
   },
   {
-    image: Ps,
+   
     title: "Photoshop",
   },
   {
-    image: xD,
+ 
     title: "Adobe XD",
   },
 ];

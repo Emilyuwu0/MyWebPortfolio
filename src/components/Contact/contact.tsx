@@ -2,7 +2,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 
 import ContactImg from "../../assets/contact.png";
-import ContactImgMobile from "../../assets/contact-mobile.png";
+import ContactImgMobile from "../../assets/contact-mobile.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Util/Variants";
 import emailjs from "emailjs-com";
@@ -138,7 +138,7 @@ export default function ContactForms() {
               <img
                 src={ContactImgMobile.src}
                 alt="contact"
-                className="sm:hidden mt-0   mr-auto ml-auto"
+                className="sm:hidden mt-0  mr-auto ml-auto  w-full"
               />
             </div>
           </div>
