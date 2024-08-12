@@ -1,4 +1,4 @@
-import AboutMe from "../../assets/about_me.png";
+import AboutMe from "../../assets/about_me.webp";
 import { motion } from "framer-motion";
 import AboutMeMobile from "../../assets/aboutme-mobile.webp";
 import { fadeIn } from "../Util/Variants";

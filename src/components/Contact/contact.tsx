@@ -1,7 +1,7 @@
 // src/components/ContactForm.js
 import { useState, type ChangeEvent, type FormEvent } from "react";
 
-import ContactImg from "../../assets/contact.png";
+import ContactImg from "../../assets/contact.webp";
 import ContactImgMobile from "../../assets/contact-mobile.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Util/Variants";

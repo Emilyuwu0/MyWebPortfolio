@@ -1,4 +1,4 @@
-import Timeline from "../../assets/timeline.png";
+import Timeline from "../../assets/timeline.webp";
 import TimelineMobile from "../../assets/timeline-mobile.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Util/Variants";
